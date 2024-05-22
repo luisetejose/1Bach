@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widht">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<style>
+    img{width: 100vw; height: 100vh; object-fit: cover; position:absolute; z-index:-1;}
+    body{display: flex; justify-content: center; align-items: center; margin:0; height: 100vh;}
+    h1{color: blue;} 
+    h1{color: gold;}
+</style>
+
+
+<body>
+    <img id="lagos.jpg">
+    <h1>
+        ¡Muy buenas Julian! ¡catate de estosh paisajesh siuu jeje!
+    </h1>
+
+    <script>
+        let a = ["lagos.jpg","mar.jpg","desierto.jpg","carretera.jpg","arbol.jpg"]
+        let r = Math.floor(Math.random() * a.length)
+        document.getElementById("lagos.jpg").src = a[r];
+    </script>
+    
+   
+</body>
+</html>

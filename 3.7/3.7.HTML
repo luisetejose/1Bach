@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <body>
+        <style>
+           body {margin:0; display:flex; justify-content:center; align-items:center; height: 100vh; flex-direction:column} /*esta última propiedad para que no los ordene en horizontal */
+            img {width: 50vw; height: 50vw; object-fit: cover;} /* la última propiedad para que no las deforme */
+        </style>
+    </body>
+</head>
+<body>
+    <img src="paisaje3.jpg" id="mifoto"><br>
+    <div>
+    <button onclick ="adelante()">adelante</button>
+    <button onclick ="atras()">atras</button>
+    </div>
+    
+    
+
+    <script>
+         let a = ["paisaje1.jpg","paisaje2.jpg","paisaje3.jpg","paisaje4.jpg","paisaje5.jpg"]; // el primer elemento tiene índice 0 
+         let i = 2;
+        function adelante(){if(i<4){
+            i = i+1;
+        document.getElementById("mifoto").src=a[i];
+        }}
+
+        function atras(){if(i>0){
+        i = i-1;
+        document.getElementById("mifoto").src=a[i];         
+        }}
+    </script>
+</body>
+</html>
